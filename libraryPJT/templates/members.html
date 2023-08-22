@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<h1 class="text-center">Members</h1>
+
+
+
+{% for m in members %}
+<div class="mx-auto w-50 bg-success text-center text-white p-3 my-3 border border-warning rounded">
+    <h5>Name: {{m.name}}</h5>
+    <h7>Borrowed: {{m.bookname}}</h7>
+</div>
+{% endfor %}
+
+
+
+{% endblock %}
